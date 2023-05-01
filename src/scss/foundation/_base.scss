@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    image-rendering: pixelated;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    vertical-align: bottom;
+    width: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 62.5%;
+    text-size-adjust: 100%;
+}
+
+.pc {
+    @include pc {
+        display: block;
+    }
+
+    @include sp {
+        display: none;
+    }
+}
+
+.sp {
+    @include pc {
+        display: none;
+    }
+
+    @include sp {
+        display: block;
+    }
+}
